@@ -9,6 +9,7 @@ int main(void) {
     char command_buffer[100]; // Declaring command buffer
     take_input(command_buffer, sizeof(command_buffer), "Input the name: "); // Asking for input
     
+    choose_service(command_buffer);
 
     return 0;
 }
