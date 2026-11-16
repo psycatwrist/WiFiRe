@@ -45,4 +45,3 @@ int list_interfaces(void) {
     pcap_freealldevs(alldevs); // To free memory
     return 0;
 }
-

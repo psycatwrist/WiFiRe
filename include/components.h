@@ -4,5 +4,6 @@
 
 // Network interface component
 int list_interfaces(void);
+void take_input(char *command, size_t size, char *msg);
 
 #endif
