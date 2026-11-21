@@ -15,7 +15,15 @@ void choose_service(char *interface) {
 
     // Working on cases
     if (command_buffer[0] == '1') {
-        printf("You have chosen WPA-2 Handshake Capture and cracker");
+        printf("You have chosen WPA-2 Handshake Capture and cracker\n");
+        pcap_t *handle = open_interface(interface);
+
+        if (handle == NULL) {
+            printf("Failed to open interface.\n");
+        } else {
+            printf("Interface opened successfully!\n");
+            printf("Handle: %p\n", (void *)handle);
+        }
     }
 }
 

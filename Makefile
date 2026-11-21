@@ -9,7 +9,7 @@ TARGET = wifire
 INCLUDE_DIR = include
 
 # Source files
-SRC = src/main.c src/components/interface.c src/components/input_manager.c
+SRC = src/main.c src/components/interface.c src/components/input_manager.c src/components/choose_service.c src/services/wpa2-cracker.c
 
 # Object files
 OBJ = $(SRC:.c=.o)
